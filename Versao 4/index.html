@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passaporte de Sabores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Passaporte de Sabores</h1>
+    <p>Viaje ao redor dos sabores do mundo e descubra novos pratos!</p>
+    <nav>
+      <a href="#africa">África</a>
+      <a href="#asia">Ásia</a>
+      <a href="#europa">Europa</a>
+      <a href="#america-norte">América do Norte</a>
+      <a href="#america-central">América Central</a>
+      <a href="#america-sul">América do Sul</a>
+      <a href="#oceania">Oceania</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--
+      MODELO DE UM PRATO (copie e cole para criar outros):
+
+      <div class="prato">
+        <article class="card">...</article>
+        <div class="detalhes">
+          <figure class="imagem">...</figure>
+          <div class="texto">...</div>
+        </div>
+      </div>
+
+      FOTOS: salve as fotos na pasta "img" (ao lado do index.html) com o nome
+      que aparece em url('img/...') de cada prato. Enquanto a foto nao existir,
+      aparece o emoji do prato no lugar.
+    -->
+
+    <!-- ÁFRICA -->
+    <section id="africa">
+      <h2>África</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Jollof Rice</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/ng.png" alt="Bandeira de Nigéria"> Nigéria</p>
+          <p>Arroz cozido em molho de tomate, pimenta e especiarias.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍚</span>
+            <div class="foto" style="background-image: url('img/jollof-rice.jpg');" role="img" aria-label="Foto de Jollof Rice"></div>
+            <figcaption>Jollof Rice</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Um dos pratos mais famosos da África Ocidental, presente em festas, casamentos e celebrações. Nigéria e Gana disputam de forma bem-humorada qual país faz a melhor versão, a chamada "guerra do jollof".</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>2 xícaras de arroz parboilizado</li>
+              <li>4 tomates e 2 pimentões vermelhos</li>
+              <li>1 cebola e pimenta a gosto</li>
+              <li>2 colheres (sopa) de extrato de tomate</li>
+              <li>3 colheres (sopa) de óleo</li>
+              <li>1 1/2 xícara de caldo de galinha</li>
+              <li>Tomilho, curry e sal</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Bata no liquidificador os tomates, os pimentões, a pimenta e metade da cebola</li>
+              <li>Refogue o resto da cebola no óleo com o extrato de tomate</li>
+              <li>Junte o molho batido e cozinhe até reduzir</li>
+              <li>Acrescente os temperos, o caldo e o arroz lavado</li>
+              <li>Tampe e cozinhe em fogo baixo por cerca de 30 minutos</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Tagine de Cordeiro</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/ma.png" alt="Bandeira de Marrocos"> Marrocos</p>
+          <p>Cordeiro cozido lentamente com especiarias e frutas secas.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🥘</span>
+            <div class="foto" style="background-image: url('img/tagine-cordeiro.jpg');" role="img" aria-label="Foto de Tagine de Cordeiro"></div>
+            <figcaption>Tagine de Cordeiro</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>O nome vem do pote de barro com tampa em forma de cone, o tagine, onde o prato é cozido. Mistura doce e salgado com frutas secas e especiarias, e costuma ser servido para compartilhar, com pão ou cuscuz.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>1 kg de cordeiro em cubos</li>
+              <li>2 cebolas e 3 dentes de alho</li>
+              <li>1 colher (chá) de gengibre, canela, cominho e cúrcuma</li>
+              <li>1 xícara de damascos secos</li>
+              <li>1/2 xícara de amêndoas</li>
+              <li>2 colheres (sopa) de azeite</li>
+              <li>2 xícaras de água e sal</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Doure o cordeiro no azeite</li>
+              <li>Junte a cebola, o alho e as especiarias</li>
+              <li>Adicione a água e cozinhe tampado, em fogo baixo, por cerca de 1h30</li>
+              <li>Coloque os damascos e cozinhe mais 15 minutos</li>
+              <li>Finalize com as amêndoas</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁSIA -->
+    <section id="asia">
+      <h2>Ásia</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Kimchi Jjigae</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/kr.png" alt="Bandeira de Coreia do Sul"> Coreia do Sul</p>
+          <p>Ensopado picante de kimchi com tofu e carne de porco.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍲</span>
+            <div class="foto" style="background-image: url('img/kimchi-jjigae.jpg');" role="img" aria-label="Foto de Kimchi Jjigae"></div>
+            <figcaption>Kimchi Jjigae</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Ensopado caseiro do dia a dia coreano, ótimo para aproveitar o kimchi muito fermentado, já ácido demais para comer cru. É servido fervendo, acompanhado de arroz branco.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>2 xícaras de kimchi maduro</li>
+              <li>200 g de carne de porco em fatias</li>
+              <li>200 g de tofu em cubos</li>
+              <li>1 colher (sopa) de gochugaru (pimenta coreana)</li>
+              <li>1 colher (sopa) de gochujang (pasta de pimenta)</li>
+              <li>1 colher (chá) de óleo de gergelim</li>
+              <li>3 xícaras de água e cebolinha</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Refogue a carne de porco no óleo de gergelim</li>
+              <li>Junte o kimchi e refogue por alguns minutos</li>
+              <li>Adicione o gochugaru, o gochujang e a água</li>
+              <li>Deixe ferver por cerca de 20 minutos</li>
+              <li>Coloque o tofu, cozinhe mais 5 minutos e finalize com cebolinha</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Shawarma</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/lb.png" alt="Bandeira de Líbano"> Líbano</p>
+          <p>Carne temperada assada no espeto e servida no pão.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🌯</span>
+            <div class="foto" style="background-image: url('img/shawarma.jpg');" role="img" aria-label="Foto de Shawarma"></div>
+            <figcaption>Shawarma</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Muito popular em todo o Oriente Médio, é tradicionalmente feito com camadas de carne em um espeto vertical que gira, e fatiado na hora. No Líbano é servido em pão sírio com picles e molho de alho ou tahine.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>500 g de coxa de frango desossada</li>
+              <li>Suco de 1 limão</li>
+              <li>3 colheres (sopa) de iogurte natural</li>
+              <li>3 dentes de alho</li>
+              <li>1 colher (chá) de cominho, páprica, cúrcuma e canela</li>
+              <li>Pão sírio, tomate, pepino e molho de alho</li>
+              <li>Sal</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Misture o frango com o limão, o iogurte, o alho e as especiarias</li>
+              <li>Deixe marinar por pelo menos 2 horas</li>
+              <li>Grelhe ou asse até dourar</li>
+              <li>Corte o frango em tiras finas</li>
+              <li>Monte no pão com tomate, pepino e molho</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EUROPA -->
+    <section id="europa">
+      <h2>Europa</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Bacalhau à Brás</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/pt.png" alt="Bandeira de Portugal"> Portugal</p>
+          <p>Bacalhau desfiado com batata palha, ovos e cebola.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🐟</span>
+            <div class="foto" style="background-image: url('img/bacalhau-a-bras.jpg');" role="img" aria-label="Foto de Bacalhau à Brás"></div>
+            <figcaption>Bacalhau à Brás</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>O bacalhau é o ingrediente símbolo da culinária portuguesa, e diz a tradição que o país tem receitas para todos os dias do ano. O Bacalhau à Brás é um dos preferidos e costuma ser associado a Lisboa.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>400 g de bacalhau dessalgado e desfiado</li>
+              <li>200 g de batata palha</li>
+              <li>1 cebola e 2 dentes de alho</li>
+              <li>5 ovos</li>
+              <li>Azeite, salsinha e azeitonas pretas</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Refogue a cebola e o alho no azeite</li>
+              <li>Junte o bacalhau e mexa por alguns minutos</li>
+              <li>Adicione a batata palha</li>
+              <li>Coloque os ovos batidos e mexa em fogo baixo até ficar cremoso</li>
+              <li>Finalize com salsinha e azeitonas</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Ratatouille</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/fr.png" alt="Bandeira de França"> França</p>
+          <p>Legumes cozidos em fogo baixo com ervas provençais.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍆</span>
+            <div class="foto" style="background-image: url('img/ratatouille.jpg');" role="img" aria-label="Foto de Ratatouille"></div>
+            <figcaption>Ratatouille</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Originário da região da Provença, no sul da França, nasceu como um prato simples de camponeses, feito com os legumes da horta no verão. Pode ser servido quente ou frio.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>1 berinjela e 2 abobrinhas</li>
+              <li>2 tomates e 1 pimentão</li>
+              <li>1 cebola e 3 dentes de alho</li>
+              <li>Azeite</li>
+              <li>Tomilho ou ervas de Provença</li>
+              <li>Sal e pimenta-do-reino</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Corte todos os legumes em cubos</li>
+              <li>Refogue a cebola e o alho no azeite</li>
+              <li>Junte a berinjela, o pimentão e depois a abobrinha</li>
+              <li>Acrescente o tomate e as ervas</li>
+              <li>Cozinhe em fogo baixo por cerca de 30 minutos</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMÉRICA DO NORTE -->
+    <section id="america-norte">
+      <h2>América do Norte</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Tacos al Pastor</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/mx.png" alt="Bandeira de México"> México</p>
+          <p>Tortilla com carne de porco marinada e abacaxi.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🌮</span>
+            <div class="foto" style="background-image: url('img/tacos-al-pastor.jpg');" role="img" aria-label="Foto de Tacos al Pastor"></div>
+            <figcaption>Tacos al Pastor</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Nasceu na Cidade do México inspirado no shawarma, levado por imigrantes libaneses no século XX. Os mexicanos adaptaram a receita com pimentas, urucum e abacaxi, criando um dos tacos mais amados do país.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>500 g de lombo de porco em fatias finas</li>
+              <li>2 colheres (sopa) de colorau ou urucum</li>
+              <li>2 pimentas secas (tipo guajillo)</li>
+              <li>1/2 xícara de suco de abacaxi</li>
+              <li>3 dentes de alho e 2 colheres (sopa) de vinagre</li>
+              <li>Tortillas de milho</li>
+              <li>Abacaxi picado, cebola e coentro</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Bata as pimentas com o suco, o alho, o vinagre e o colorau</li>
+              <li>Marine a carne nesse tempero por cerca de 4 horas</li>
+              <li>Grelhe em chapa bem quente</li>
+              <li>Pique a carne e sirva nas tortillas</li>
+              <li>Finalize com abacaxi, cebola e coentro</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Montreal Smoked Meat</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/ca.png" alt="Bandeira de Canadá"> Canadá</p>
+          <p>Carne bovina curada e defumada, servida em sanduíche.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🥪</span>
+            <div class="foto" style="background-image: url('img/montreal-smoked-meat.jpg');" role="img" aria-label="Foto de Montreal Smoked Meat"></div>
+            <figcaption>Montreal Smoked Meat</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Típica de Montreal, no Quebec, está ligada às delicatessens da cidade e à comunidade judaica que imigrou para o Canadá. A carne é curada com especiarias, defumada e servida em pão de centeio com mostarda.</p>
+            <h4>Ingredientes (versão simplificada)</h4>
+            <ul>
+              <li>1 kg de peito bovino</li>
+              <li>1/2 xícara de sal grosso e 2 colheres (sopa) de açúcar</li>
+              <li>2 colheres (sopa) de pimenta-do-reino em grãos</li>
+              <li>1 colher (sopa) de coentro em grãos e de mostarda em grãos</li>
+              <li>3 dentes de alho</li>
+              <li>Pão de centeio e mostarda amarela</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Misture o sal, o açúcar, o alho e as especiarias</li>
+              <li>Esfregue na carne e deixe curar na geladeira por alguns dias</li>
+              <li>Defume ou asse em temperatura baixa por algumas horas</li>
+              <li>Cozinhe no vapor até a carne ficar macia</li>
+              <li>Fatie e sirva no pão de centeio com mostarda</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMÉRICA CENTRAL -->
+    <section id="america-central">
+      <h2>América Central</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Vigorón</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/ni.png" alt="Bandeira de Nicarágua"> Nicarágua</p>
+          <p>Mandioca cozida com torresmo e salada de repolho.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🥬</span>
+            <div class="foto" style="background-image: url('img/vigoron.jpg');" role="img" aria-label="Foto de Vigorón"></div>
+            <figcaption>Vigorón</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Prato de rua típico da cidade de Granada, na Nicarágua, vendido em barracas e mercados. Tradicionalmente é servido sobre uma folha de bananeira e comido com as mãos.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>500 g de mandioca</li>
+              <li>200 g de torresmo</li>
+              <li>1/4 de repolho ralado</li>
+              <li>2 tomates e 1/2 cebola</li>
+              <li>1 limão e 2 colheres (sopa) de vinagre</li>
+              <li>Sal e folha de bananeira (opcional)</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Cozinhe a mandioca em água com sal até ficar macia</li>
+              <li>Misture o repolho, o tomate e a cebola picados com limão, vinagre e sal</li>
+              <li>Monte o prato com a mandioca</li>
+              <li>Coloque a salada por cima</li>
+              <li>Finalize com o torresmo</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Arroz con Pollo</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/pa.png" alt="Bandeira de Panamá"> Panamá</p>
+          <p>Arroz colorido com frango e legumes.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍗</span>
+            <div class="foto" style="background-image: url('img/arroz-con-pollo.jpg');" role="img" aria-label="Foto de Arroz con Pollo"></div>
+            <figcaption>Arroz con Pollo</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Está presente em vários países da América Latina, cada um com a sua versão. No Panamá é um prato de almoço em família e de festas, geralmente feito com legumes e bastante coentro.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>4 coxas e sobrecoxas de frango</li>
+              <li>2 xícaras de arroz</li>
+              <li>1 cebola, 1 pimentão e 3 dentes de alho</li>
+              <li>1/2 xícara de ervilha e cenoura</li>
+              <li>3 colheres (sopa) de coentro picado</li>
+              <li>3 xícaras de caldo de galinha</li>
+              <li>Óleo, cominho e sal</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Tempere o frango e doure no óleo</li>
+              <li>Refogue a cebola, o pimentão e o alho na mesma panela</li>
+              <li>Junte o arroz e mexa por 1 minuto</li>
+              <li>Volte o frango, adicione o caldo, os legumes e o coentro</li>
+              <li>Tampe e cozinhe em fogo baixo até o arroz ficar macio</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMÉRICA DO SUL -->
+    <section id="america-sul">
+      <h2>América do Sul</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Ceviche</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/pe.png" alt="Bandeira de Peru"> Peru</p>
+          <p>Peixe cru marinado no limão com cebola roxa e pimenta.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍋</span>
+            <div class="foto" style="background-image: url('img/ceviche.jpg');" role="img" aria-label="Foto de Ceviche"></div>
+            <figcaption>Ceviche</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>É considerado prato nacional do Peru e patrimônio cultural do país. O peixe cru "cozinha" na acidez do limão e é servido com batata-doce, milho e cebola roxa. Deve ser comido logo após o preparo.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>500 g de peixe branco muito fresco</li>
+              <li>Suco de 8 limões</li>
+              <li>1 cebola roxa fatiada</li>
+              <li>Pimenta a gosto e coentro</li>
+              <li>Sal</li>
+              <li>Batata-doce cozida e milho para acompanhar</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Corte o peixe em cubos e tempere com sal</li>
+              <li>Misture com o suco de limão</li>
+              <li>Junte a cebola, a pimenta e o coentro</li>
+              <li>Deixe marinar por poucos minutos</li>
+              <li>Sirva logo, com a batata-doce e o milho</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Asado</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/ar.png" alt="Bandeira de Argentina"> Argentina</p>
+          <p>Cortes de carne assados na brasa em fogo lento.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🥩</span>
+            <div class="foto" style="background-image: url('img/asado.jpg');" role="img" aria-label="Foto de Asado"></div>
+            <figcaption>Asado</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>Mais que uma refeição, o asado é um encontro social, geralmente aos domingos, com família e amigos. Quem cuida da grelha é o "asador" e o tempero tradicional é apenas sal grosso, acompanhado de chimichurri.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>1,5 kg de costela</li>
+              <li>Cortes como entrecot e linguiça (chorizo)</li>
+              <li>Sal grosso</li>
+              <li>Chimichurri: salsinha, orégano, alho, vinagre, azeite e pimenta calabresa</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Acenda a brasa e espere formar bastante cinza</li>
+              <li>Tempere a carne com sal grosso</li>
+              <li>Asse em fogo baixo, começando pela costela</li>
+              <li>Vire poucas vezes para a carne ficar suculenta</li>
+              <li>Sirva com chimichurri</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OCEANIA -->
+    <section id="oceania">
+      <h2>Oceania</h2>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Poke</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/us-hi.png" alt="Bandeira de Havaí"> Havaí</p>
+          <p>Cubos de peixe cru temperados, servidos com arroz.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍣</span>
+            <div class="foto" style="background-image: url('img/poke.jpg');" role="img" aria-label="Foto de Poke"></div>
+            <figcaption>Poke</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>A palavra "poke" significa "cortar em pedaços" no idioma havaiano. Era um lanche de pescadores, feito com sobras do peixe, e hoje é famoso no mundo todo em versões servidas em bowls.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>400 g de atum fresco em cubos</li>
+              <li>3 colheres (sopa) de shoyu</li>
+              <li>1 colher (chá) de óleo de gergelim</li>
+              <li>2 cebolinhas e 1/2 cebola</li>
+              <li>1 colher (sopa) de gergelim</li>
+              <li>2 xícaras de arroz cozido e abacate</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Corte o atum em cubos</li>
+              <li>Misture com o shoyu, o óleo de gergelim, a cebola e a cebolinha</li>
+              <li>Deixe descansar na geladeira por 15 minutos</li>
+              <li>Monte um bowl com arroz e o atum</li>
+              <li>Finalize com gergelim e abacate</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="prato">
+        <article class="card">
+          <h3>Kumara com Cordeiro</h3>
+          <p class="pais"><img class="bandeira" src="https://flagcdn.com/w80/nz.png" alt="Bandeira de Nova Zelândia"> Nova Zelândia</p>
+          <p>Cordeiro assado acompanhado de batata-doce kumara.</p>
+        </article>
+        <div class="detalhes">
+          <figure class="imagem">
+            <span class="emoji">🍠</span>
+            <div class="foto" style="background-image: url('img/kumara-cordeiro.jpg');" role="img" aria-label="Foto de Kumara com Cordeiro"></div>
+            <figcaption>Kumara com Cordeiro</figcaption>
+          </figure>
+          <div class="texto">
+            <h4>Cultura</h4>
+            <p>A kumara é a batata-doce que os maoris trouxeram em suas viagens pelo Pacífico e que faz parte da cultura do país. O cordeiro é outro símbolo da Nova Zelândia, grande produtora e exportadora de carne ovina.</p>
+            <h4>Ingredientes</h4>
+            <ul>
+              <li>1,5 kg de paleta de cordeiro</li>
+              <li>3 batatas-doces (kumara)</li>
+              <li>4 dentes de alho</li>
+              <li>Alecrim e azeite</li>
+              <li>Sal e pimenta-do-reino</li>
+            </ul>
+            <h4>Modo de preparo</h4>
+            <ol>
+              <li>Tempere o cordeiro com alho, alecrim, azeite, sal e pimenta</li>
+              <li>Asse a 170 °C por cerca de 2 horas, coberto com papel alumínio</li>
+              <li>Corte a batata-doce em pedaços e regue com azeite</li>
+              <li>Coloque na assadeira nos últimos 40 minutos</li>
+              <li>Deixe o cordeiro descansar e sirva com as batatas</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Trabalho de Front End | Feito com HTML e CSS</p>
+  </footer>
+
+</body>
+</html>
